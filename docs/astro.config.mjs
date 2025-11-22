@@ -3,7 +3,6 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog'
 import starlightSidebarTopics from 'starlight-sidebar-topics'
-import personalInformation from './src/data/personal-information.json'
 import { SITE_TITLE, URL } from './src/const/const';
 
 
@@ -17,17 +16,17 @@ export default defineConfig({
         {
           icon: 'github',
           label: 'GitHub',
-          href: personalInformation.socials.github.link
+          href: "https://github.com/preamza02"
         },
         {
           icon: 'linkedin',
           label: 'LinkedIn',
-          href: personalInformation.socials.linkedin.link,
+          href: "https://www.linkedin.com/in/supakone-kongprapan/"
         },
         {
           icon: 'email',
           label: 'Email',
-          href: 'mailto:' + personalInformation.contact.email,
+          href: 'mailto:supakone.kongprapan@gmail.com' 
         },
       ],
       logo: {
@@ -49,8 +48,8 @@ export default defineConfig({
           },
           authors: {
             me: {
-              name: personalInformation.name,
-              title: personalInformation.title,
+              name: "Supakone Kongprapan",
+              title: "Software Engineer",
               picture: '/me.png',
               url: URL,
             },
@@ -65,20 +64,16 @@ export default defineConfig({
               items: [
                 {
                   label: 'Getting Started',
-                  items: ['info']
+                  items: ['info','info/personal_info']
                 },
                 {
-                  label: 'About Him',
-                  autogenerate: { directory: 'info/about' },
+                  label: 'Work',
+                  autogenerate: { directory: 'info/work' },
                 },
-                {
-                  label: 'Projects',
-                  autogenerate: { directory: 'info/projects' },
-                }
               ],
             },
             {
-              label: 'Docs',
+              label: 'Docs (WIP)',
               icon: 'document',
               link: '/docs/',
               items: [
@@ -93,7 +88,7 @@ export default defineConfig({
               ]
             },
             {
-              label: 'Mission',
+              label: 'Mission (WIP)',
               icon: 'star',
               link: '/missions/',
               items: [
