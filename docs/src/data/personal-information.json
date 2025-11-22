@@ -1,0 +1,110 @@
+{
+    "name": "Supakone Kongprapan",
+    "title": "Software Engineer",
+    "description": "Software Engineer | Tech Enthusiast | GF lover",
+    "contact":{
+        "email": "supakone.kongprapan@gmail.com"
+    },
+    "socials": {
+        "github": {
+            "link": "https://github.com/preamza02"
+        },
+        "linkedin": {
+            "link": "https://www.linkedin.com/in/supakone-kongprapan/"
+        }
+    },
+    "location": "Bangkok, Thailand",
+    "bio": {
+        "birthYear": 2002,
+        "hometown": "Phrae, Thailand",
+        "education": "Studied Computer Engineering at Chulalongkorn University, graduating in 2025.",
+        "timeline": [
+            {
+                "year": "2024",
+                "event": "Met my girlfriend."
+            },
+            {
+                "year": "2024-2025",
+                "event": "Worked part-time as a Software Developer at a Thai startup (Genomic Analysis Platform)."
+            },
+            {
+                "year": "2025 (May-Nov)",
+                "event": "Participating in the Work and Travel Program in the USA."
+            },
+            {
+                "year": "2025 (Oct)",
+                "event": "Planning to join a new Thai Deep Tech startup."
+            }
+        ]
+    },
+    "missions": [
+        {
+            "id": "M1",
+            "text": "Become the great Person (Honest, Strong, Discipline, Wise, Dedicate, Speak Articulately)."
+        },
+        {
+            "id": "M2",
+            "text": "Build/Create a (real) technology company for Thailand by founding it or joining one."
+        },
+        {
+            "id": "M3",
+            "text": "Help Phrae to be a better place to live and work by creating jobs and opportunities for young people."
+        }
+    ],
+    "narratives": [
+        {
+            "id": "N1",
+            "text": "I am in the process of becoming a great person. By practicing discipline, honesty, and dedication."
+        },
+        {
+            "id": "N2",
+            "text": "I am joining a small Deep Tech Startup in Thailand to learn how to build/manage companies and products, learn the good engineering mindset, improve my technical skills, and help the company grow."
+        },
+        {
+            "id": "N3",
+            "text": "I am Starting Youtube Channel Right now. Share my journey hoping to inspire other people.",
+            "link": "https://www.youtube.com/@SukongSomething"
+        }
+    ],
+    "bigGoals": [
+        {
+            "id": "G1",
+            "text": "Less than 85 Kg with 20% Body Fat by August 2026."
+        },
+        {
+            "id": "G2",
+            "text": "Keep doing Youtube Channel and reach 1,000 Subscribers by August 2026."
+        },
+        {
+            "id": "G3",
+            "text": "Become a Senior Software Engineer by August 2027."
+        },
+        {
+            "id": "G4",
+            "text": "Ready to have kids and family by August 2028 (Financially, Mentally)."
+        },
+        {
+            "id": "G5",
+            "text": "Learn Some Martial Art (Boxing and some Grappling) by August 2029."
+        },
+        {
+            "id": "G6",
+            "text": "Finish Marathon (42.195 Km) by August 2030."
+        },
+        {
+            "id": "G7",
+            "text": "Having a flexible body by August 2031 (can do split)."
+        }
+    ],
+    "challenges": [
+        "I am not disciplined enough to stick to my goals and plans and need to improve my self-discipline and consistency.",
+        "I worry about the future and not being able to achieve my goals, and need to learn to trust the process and be patient.",
+        "I don't have enough money to invest in myself and my future, and need to find ways to increase my income and save more money."
+    ],
+    "wisdom": [
+        "Always do the Hardthing.",
+        "Discipline give you Freedom.",
+        "Being so good that they can't ignore you.",
+        "Relationship is the most important thing in life."
+    ]
+}
