@@ -4,18 +4,17 @@ description: All the work Related to Software Engineer of Supakone Kongprapan
 sidebar:
     order: 2
 ---
+ 
+Software engineering is my main profession and where I spend most of my working hours.
 
-Software Engineer is my main profession where I spend most of my working hours.
+## Skill set
 
-## Skill Set 
+- **Programming languages:** JavaScript/TypeScript, Python, Go; familiar with Rust.
+- **Web frameworks and libraries:** Experienced with Node.js, Gin, and FastAPI for backend development; familiar with React, Next.js, Astro, and Svelte for frontend development.
+- **Databases:** PostgreSQL, MongoDB, Redis, and ClickHouse.
+- **DevOps and cloud:** Docker, Kubernetes, Helm, Tilt, and CI/CD pipelines (GitHub Actions). Familiar with AWS and GCP.
 
-- **Programming Languages:** Proficient in JavaScript/TypeScript, Python, and Go. Familiar with Rust.
-- **Website Frameworks and Libraries:** Experienced with Node.js, gin and FastAPI for Backend development. Knowledgeable in React, Next.js, Astro, Svelte.js for Frontend development.
-- **Databases:** Skilled in using relational databases like PostgreSQL, NoSQL databases like MongoDB and Redis or Analytics databases like ClickHouse.
-- **DevOps and Cloud Services:** Experienced with Docker, Kubernetes, Helm, Tilt.dev, and CI/CD pipelines like GitHub Actions. Familiar with cloud platforms such as AWS and GCP.
-
-
-## Work Experience 
+## Work experience
 
 I have worked in several software engineering roles, mostly focused on backend development.
 
@@ -26,15 +25,13 @@ I have worked in several software engineering roles, mostly focused on backend d
 - **What I do**: Worked on developing and maintaining backend services using Node.js and Express.js.
 Collaborated with cross-functional teams to design scalable APIs for various applications.
 
-### Non-Fulltime Experience
+### Non‑full‑time experience
 
-- Software Developer Part-Time at [AthenaAI](http://athenaai.co)
-    - **Period**: *Feb 2024 - May 2025*
-    - **What I did**: 
+- **Software Developer (Part-time)** at AthenaAI — *Feb 2024 – May 2025*
+    - **What I did:** (add details)
 
-- Software Engineer Intern at [KKP Dime](https://dime.co.th)
-    - **Period**: *June 2024 - July 2024* (2 months)
-    - **What I did**: 
+- **Software Engineer Intern** at KKP Dime — *June 2024 – July 2024*
+    - **What I did:** (add details)
 
 ## Projects
 
@@ -54,6 +51,6 @@ I myself like other fellow software engineer we rarely finish our side project a
 - **Document** : [Supakone.dev Docs](/docs)
 - **Why It worth mentioning**: This website have real use case apart from being my personal website. This website also serve as documentation site for my other open source project and my blog. I also document my journey on building this website on [Supakone.dev Docs](/docs). So This website can is the example of how all-in-one personal website can be done effectively.
 
-## Open Source Contributions
+## Open-source contributions
 
 TBA

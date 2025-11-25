@@ -10,10 +10,10 @@ cover:
 
 WIP
 
-Are you looking for
+Are you looking for:
 
-- Markdown-based personal website solution?
-- Easy to set up and maintain?
-- Customizable and extendable?
+- A Markdown-based personal website solution?
+- Something easy to set up and maintain?
+- A customizable and extendable setup?
 
-You come to the right place! In this blog post. I will show you exactly how to build It using Startlight and Starlight Blog plugin in Astro Framework.
+You've come to the right place! In this blog post, I will show you exactly how to build it using Starlight and the Starlight Blog plugin in the Astro framework.
