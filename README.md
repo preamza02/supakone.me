@@ -1,8 +1,8 @@
 <p align="center">
     <img style="width: 300px;self-align: center;" src="public/logo.png">
-</p>
 
 supakone.me is an all-in-one personal website built with Astro and Starlight template. It features a personal info page, a blog, and documentation for open source projects.
+</p>
 
 <div align="center">
 
