@@ -50,7 +50,7 @@ I myself like other fellow software engineer we rarely finish our side project a
 - **Technologies Used**: Astro (with starlight), MD/MDX, Github Action 
 - **Source Code**: [GitHub Repository](https://github.com/preamza02/supakone.me)
 - **Document** : [Supakone.me Docs](/docs)
-- **Why It worth mentioning**: This website have real use case apart from being my personal website. This website also serve as documentation site for my other open source project and my blog. I also document my journey on building this website on [Supakone.me Docs](/docs). So This website can is the example of how all-in-one personal website can be done effectively.
+- **Why It's worth mentioning**: This website has real use case apart from being my personal website. This website also serves as documentation site for my other open source project and my blog. I also document my journey on building this website on [Supakone.me Docs](/docs). So This website is the example of how all-in-one personal website can be done effectively.
 
 ## Open-source contributions
 
