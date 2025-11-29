@@ -3,7 +3,7 @@ title: Personal Information
 description: Personal Information about Supakone Kongprapan
 lastUpdated: 2025-11-29
 sidebar:
-    order: 1
+  order: 1
 ---
 
 ## About Me
@@ -41,12 +41,12 @@ Feel free to reach out for professional inquiries, collaboration opportunities, 
 
 Stay connected and follow my journey:
 
-| Platform | Link | Description |
-|----------|------|-------------|
-| GitHub | [preamza02](https://github.com/preamza02) | My open source projects and contributions |
-| LinkedIn | [Supakone Kongprapan](https://www.linkedin.com/in/supakone-kongprapan/) | Professional networking and career updates |
-| Twitter/X | [@preamza02](https://twitter.com/preamza02) | Tech thoughts and daily updates |
-| YouTube | [Sukong Something](https://www.youtube.com/@supakonedev) | Tech tutorials and vlogs |
+| Platform  | Link                                                                    | Description                                |
+| --------- | ----------------------------------------------------------------------- | ------------------------------------------ |
+| GitHub    | [preamza02](https://github.com/preamza02)                               | My open source projects and contributions  |
+| LinkedIn  | [Supakone Kongprapan](https://www.linkedin.com/in/supakone-kongprapan/) | Professional networking and career updates |
+| Twitter/X | [@preamza02](https://twitter.com/preamza02)                             | Tech thoughts and daily updates            |
+| YouTube   | [Sukong Something](https://www.youtube.com/@supakonedev)                | Tech tutorials and vlogs                   |
 
 ---
 
@@ -69,24 +69,24 @@ Here are my current goals and their progress:
 
 ### 🎯 Professional Goals
 
-| Goal | Status | Target Date | Progress |
-|------|--------|-------------|----------|
-| <!-- [FILL: Goal 1 - e.g., Master Rust programming] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
-| <!-- [FILL: Goal 2 - e.g., Contribute to 5 open source projects] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
-| <!-- [FILL: Goal 3] --> | <!-- [FILL: Status] --> | <!-- [FILL: Target Date] --> | <!-- [FILL: Progress %] --> |
+| Goal                                                                 | Status                                             | Target Date                  | Progress                    |
+| -------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------- | --------------------------- |
+| <!-- [FILL: Goal 1 - e.g., Master Rust programming] -->              | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] -->     | <!-- [FILL: Progress %] --> |
+| <!-- [FILL: Goal 2 - e.g., Contribute to 5 open source projects] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] -->     | <!-- [FILL: Progress %] --> |
+| <!-- [FILL: Goal 3] -->                                              | <!-- [FILL: Status] -->                            | <!-- [FILL: Target Date] --> | <!-- [FILL: Progress %] --> |
 
 ### 📚 Learning Goals
 
-| Goal | Status | Target Date | Progress |
-|------|--------|-------------|----------|
+| Goal                                                                | Status                                             | Target Date              | Progress                    |
+| ------------------------------------------------------------------- | -------------------------------------------------- | ------------------------ | --------------------------- |
 | <!-- [FILL: Learning Goal 1 - e.g., Complete AWS certification] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
-| <!-- [FILL: Learning Goal 2 - e.g., Learn Kubernetes in depth] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
+| <!-- [FILL: Learning Goal 2 - e.g., Learn Kubernetes in depth] -->  | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
 
 ### 💪 Personal Goals
 
-| Goal | Status | Target Date | Progress |
-|------|--------|-------------|----------|
-| <!-- [FILL: Personal Goal 1 - e.g., Read 12 books this year] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
+| Goal                                                                         | Status                                             | Target Date              | Progress                    |
+| ---------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------ | --------------------------- |
+| <!-- [FILL: Personal Goal 1 - e.g., Read 12 books this year] -->             | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
 | <!-- [FILL: Personal Goal 2 - e.g., Maintain consistent workout routine] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
 
 ---

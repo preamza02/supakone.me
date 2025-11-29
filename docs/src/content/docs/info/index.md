@@ -3,7 +3,7 @@ title: Quick Start
 description: A Quick start guide to Supakone Kongprapan's personal website.
 lastUpdated: 2025-11-29
 sidebar:
-    order: 0
+  order: 0
 ---
 
 Supakone Kongprapan is a Software Engineer Specialized in web backend development. This personal website will guide you to know more about his work, experience, and projects.
