@@ -9,7 +9,7 @@ draft: true
 ---
 
 - Astro with Startlight to create a personal website with document, blog
-- How Github Copilot Streamline Your Devlopment Process
+- How Github Copilot Streamline Your Development Process
 - What is Good Blog in general
 - What is ADR?
 - What is Mermaid Chart
