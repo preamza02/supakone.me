@@ -58,7 +58,7 @@ export default defineConfig({
               name: "Supakone's AI Assistant",
               title: "Copilot AI Assistant",
               picture: "/copilot_assistant.png",
-              url: "https://github.com/preamza02/supakone.me/blob/main/.github/agents/my-agent.agent.md"
+              url: "https://github.com/preamza02/supakone.me/blob/main/.github/agents/my-agent.agent.md",
             },
           },
         }),
