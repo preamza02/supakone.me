@@ -31,9 +31,9 @@ I'm **Supakone Kongprapan** (nickname: Prame), a Software Engineer from Phrae, T
 
 ### 💼 Career
 
-- **2024–2025:** Part-time Software Developer (1 year 3 months) at a small Thai startup working on a Genomic Analysis Platform.
+- **2024–2025:** Part-time Software Developer (1 year 3 months) at a [Athena AI](https://athenaai.co/), Thai startup working on a Genomic Analysis Platform.
 - **May–Nov 2025:** Work and Travel Program in the USA — Gained international experience and improved English skills.
-- **Oct 2025–Present:** Junior Software Engineer at Api Plus Tech Co., Ltd. — A Thai deep tech startup building innovative solutions.
+- **Oct 2025–Present:** Backend Engineer at [API Plus Tech](https://apiplustech.com/), the company behind [Dicast](https://dicast.io/), Platform that help SMEs build their websites globally.
 
 ### 🏆 Notable Achievements
 
@@ -41,9 +41,11 @@ I'm **Supakone Kongprapan** (nickname: Prame), a Software Engineer from Phrae, T
 - **3× Volunteer Leader** at Chulalongkorn University Dormitory Volunteer Camp (50th, 51st, 52nd):
   - Led teams to build infrastructure and organize community service in rural areas across Udon Thani, Surin, and Chumphon, Thailand.
 
+## What I Dedicate My Life To
+
 ---
 
-## Problems I Care About
+### Problems I Care About
 
 1. **Thailand's Economy:** Thailand is losing competitiveness in the region, and I want to contribute to solving this.
 2. **Building for the Future:** The world is becoming more complex, and I want to help create people and solutions that can make it better.
@@ -51,17 +53,19 @@ I'm **Supakone Kongprapan** (nickname: Prame), a Software Engineer from Phrae, T
 
 ---
 
-## My Missions
+### My Missions
 
 > **M1:** Become a great person — Honest, Strong, Disciplined, Wise, Dedicated, and Articulate.
 
-> **M2:** Build or join a real technology company for Thailand — contributing to the nation's tech ecosystem.
+> **M2:** Build or join a real technology company — contributing to the tech ecosystem.
 
 > **M3:** Be able to support my family and take full responsibility for them.
 
+> **M4:** Giving Back to my society when I'm capable.
+
 ---
 
-## Current Narratives
+### Current Narratives
 
 These are the stories I'm actively living:
 
@@ -71,25 +75,10 @@ These are the stories I'm actively living:
 
 3. **Building My Brand:** I'm creating my personal brand through this blog and website. Future plans include a YouTube channel documenting my journey, and expanding to Facebook, Instagram, TikTok, Twitter, and Daily.dev.
 
----
-
-## Big Goals
-
-| Goal                                                   | Target Date   |
-| ------------------------------------------------------ | ------------- |
-| Less than 85 kg with 20% body fat                      | August 2026   |
-| Start personal brand (Blog + YouTube)                  | December 2025 |
-| Become a Senior Software Engineer                      | August 2027   |
-| Ready to have kids and family (financially & mentally) | August 2028   |
-| Learn martial arts (Boxing + Grappling)                | August 2029   |
-| Finish a marathon (42.195 km)                          | August 2030   |
-| Have a flexible body (can do splits)                   | August 2031   |
-| Excel at Api Plus Tech (salary > 50,000 THB)           | December 2026 |
-| Additional income stream (> 3,000 THB/month)           | August 2029   |
 
 ---
 
-## Current Challenges
+### Current Challenges
 
 - **Discipline:** Struggling to consistently stick to my goals and plans. Working on improving self-discipline.
 - **Future Anxiety:** Worrying about not achieving my goals. Learning to trust the process and be patient.
@@ -97,26 +86,24 @@ These are the stories I'm actively living:
 
 ---
 
-## Things I've Been Wrong About
+### Things I've Been Wrong About
 
 - Thinking I was better than other people — I'm just a human like everyone else.
 - Believing that being good at something only requires a little effort — It actually takes a lot of time and dedication.
 
 ---
 
-## My Ideas & Beliefs
+### My Ideas & Beliefs
 
 1. All governments should be digitalized to decrease costs and increase efficiency.
-2. Thai people should support Thai products and companies more.
-3. Thailand needs strong monopolistic companies to compete in the global market.
-4. Thailand needs to focus on developing deep tech and high-tech industries.
-5. Phrae is a great place because it has "nothing" (that's unique) — making it a perfect place to relax.
-6. Learning Chinese and English is essential because they are the languages of the two superpowers.
-7. AI-powered startups are the new trend, especially in Thailand where traditional businesses are still dominant.
+2. Thailand needs to focus on developing deep tech and high-tech industries.
+3. Phrae is a great place because it has "nothing" (that's unique) — making it a perfect place to relax.
+4. Learning Chinese and English is essential because they are the languages of the two superpowers.
+5. AI-powered startups are the new trend, especially in Thailand where traditional businesses are still dominant.
 
 ---
 
-## My Predictions
+### My Predictions
 
 | Prediction                                                                   | Confidence |
 | ---------------------------------------------------------------------------- | ---------- |
@@ -127,7 +114,7 @@ These are the stories I'm actively living:
 
 ---
 
-## Wisdom I Live By
+### Wisdom I Live By
 
 - **Always do the hard thing.**
 - **Discipline gives you freedom.**
@@ -159,5 +146,5 @@ Feel free to reach out for professional inquiries, collaboration opportunities, 
 | Email     | [supakone.kongprapan@gmail.com](mailto:supakone.kongprapan@gmail.com)   | Professional inquiries                     |
 | GitHub    | [preamza02](https://github.com/preamza02)                               | Open source projects and contributions     |
 | LinkedIn  | [Supakone Kongprapan](https://www.linkedin.com/in/supakone-kongprapan/) | Professional networking and career updates |
-| Twitter/X | [@preamza02](https://twitter.com/preamza02)                             | Tech thoughts and daily updates            |
-| YouTube   | [Sukong Something](https://www.youtube.com/@supakonedev)                | Tech tutorials and vlogs                   |
+| Twitter/X | [@spk_kpp](https://x.com/spk_kpp)                             | Tech thoughts and daily updates            |
+| YouTube   | [Sukong Something](https://www.youtube.com/@SukongSomething)                | Tech tutorials and vlogs                   |
