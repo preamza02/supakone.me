@@ -5,7 +5,7 @@ author: me
 tags: [blog, idea, personal]
 Description: The idea behind creating a personal website using Markdown and Starlight.
 lastUpdated: 2024-11-29
-draft: true 
+draft: true
 ---
 
 - Astro with Startlight to create a personal website with document, blog

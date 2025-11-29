@@ -32,6 +32,7 @@ He fell in love with the technology when he can use open source software for fre
 - I try to write a blog posts about technology and personal development on my [personal blog](/blog)
 
 ## Favorite Things
+
 - **Food:** Steak, fried chicken, and anything my girlfriend likes (she has great taste)
 - **Restaurant:** The 3rd restaurant in Chula dormitory called "bowvy ju", and any restaurant my girlfriend picks (she really has good taste)
 - **Music genres:** Thai country (e.g., Kon La Fun / Carabao), Cocktail (band)
@@ -46,10 +47,10 @@ He fell in love with the technology when he can use open source software for fre
 - Participated in a Work and Travel program during summer 2025 — Delaware, USA.
 
 - Multiple-time participant in the Chulalongkorn University Dormitory Voluntary Camp (50th, 51st, 52nd):
-    - (50th) Participated in camp activities to help a local school in a rural area — Udon Thani, Thailand.
-    - (51st) Led a team of university students to collaborate with the local community to build a multi-purpose building for a rural school — Surin, Thailand.
-    - (52nd) Organized and led activities for volunteer students to participate in community service — Chumphon, Thailand.
+  - (50th) Participated in camp activities to help a local school in a rural area — Udon Thani, Thailand.
+  - (51st) Led a team of university students to collaborate with the local community to build a multi-purpose building for a rural school — Surin, Thailand.
+  - (52nd) Organized and led activities for volunteer students to participate in community service — Chumphon, Thailand.
 
 - Bronze medalist in the 17th Thailand Mathematics Olympiad (TMO 17):
-    - Represented Chiang Mai University at the national mathematics competition for high school students and achieved a bronze medal.
-    - Achieved the highest score from the northern region that year.
+  - Represented Chiang Mai University at the national mathematics competition for high school students and achieved a bronze medal.
+  - Achieved the highest score from the northern region that year.
