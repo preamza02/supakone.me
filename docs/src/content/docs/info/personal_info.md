@@ -1,126 +1,163 @@
 ---
 title: Personal Information
-description: Personal Information about Supakone Kongprapan
+description: Get to know Supakone Kongprapan - A Software Engineer from Thailand on a mission to build impactful technology and become a great person.
 lastUpdated: 2025-11-29
 sidebar:
   order: 1
 ---
 
-## About Me
+## Who Am I?
 
-Supakone is a passionate software developer and technology enthusiast.
-He fell in love with technology when he discovered the power of open source software and its accessibility.
+I'm **Supakone Kongprapan** (nickname: Prame), a Software Engineer from Phrae, Thailand. Born in 2002 with a twin, I discovered my passion for mathematics early and later fell in love with software engineering. I believe in doing hard things, practicing discipline, and building technology that makes a real difference.
 
-<!-- TODO: add real image later -->
-
-### Personal Details
+### Quick Facts
 
 - **Full Name:** Supakone Kongprapan
 - **Nickname:** Prame
-- **Birth Year:** 2002
-- **Nationality:** Thai
-- **Location:** Bangkok, Thailand (Open to remote work worldwide)
+- **Birth Year:** 2002 (Born with a twin)
+- **Hometown:** Phrae, Thailand
+- **Current Location:** Bangkok, Thailand (Open to remote work worldwide)
 - **Languages:** Thai (Native), English (Professional Working Proficiency)
-
-### Education
-
-- 2017–2021: SMTE Program, Piriyalai School Phrae
-- 2021–2024: Bachelor of Engineering in Computer Engineering, Chulalongkorn University
+- **Relationship:** Met my beautiful girlfriend in 2024 ❤️
 
 ---
 
-## Contact Information
+## My Journey
 
-Feel free to reach out for professional inquiries, collaboration opportunities, or just to say hello!
+### 📚 Education
 
-- **Email:** [supakone.kongprapan@gmail.com](mailto:supakone.kongprapan@gmail.com)
+- **2017–2021:** SMTE (Science, Math, Technology and Environment) Program at Piriyalai School Phrae — Showed talent in mathematics and had a great teen experience.
+- **2021–2025:** Bachelor of Engineering in Computer Engineering at Chulalongkorn University, Bangkok — Participated in 3 voluntary camps and graduated in 2025.
 
----
+### 💼 Career
 
-## Social Media Links
+- **2024–2025:** Part-time Software Developer (1 year 3 months) at a small Thai startup working on a Genomic Analysis Platform.
+- **May–Nov 2025:** Work and Travel Program in the USA — Gained international experience and improved English skills.
+- **Oct 2025–Present:** Junior Software Engineer at Api Plus Tech Co., Ltd. — A Thai deep tech startup building innovative solutions.
 
-Stay connected and follow my journey:
+### 🏆 Notable Achievements
 
-| Platform  | Link                                                                    | Description                                |
-| --------- | ----------------------------------------------------------------------- | ------------------------------------------ |
-| GitHub    | [preamza02](https://github.com/preamza02)                               | My open source projects and contributions  |
-| LinkedIn  | [Supakone Kongprapan](https://www.linkedin.com/in/supakone-kongprapan/) | Professional networking and career updates |
-| Twitter/X | [@preamza02](https://twitter.com/preamza02)                             | Tech thoughts and daily updates            |
-| YouTube   | [Sukong Something](https://www.youtube.com/@supakonedev)                | Tech tutorials and vlogs                   |
-
----
-
-## Mission Statement
-
-> **My mission is to build impactful software that solves real-world problems while contributing to the open source community and sharing knowledge with fellow developers.**
-
-I believe that technology should be accessible to everyone. Through my work and content creation, I aim to:
-
-- Create high-quality, well-documented open source software
-- Share knowledge through blog posts, videos, and documentation
-- Help others learn and grow in their software engineering journey
-- Build tools that improve developer productivity
+- **Bronze Medalist** at the 17th Thailand Mathematics Olympiad (TMO 17) — Represented Chiang Mai University and achieved the highest score from the northern region.
+- **3× Volunteer Leader** at Chulalongkorn University Dormitory Voluntary Camp (50th, 51st, 52nd):
+  - Led teams to build infrastructure and organize community service in rural areas across Udon Thani, Surin, and Chumphon, Thailand.
 
 ---
 
-## Current Goals
+## Problems I Care About
 
-Here are my current goals and their progress:
-
-### 🎯 Professional Goals
-
-| Goal                                                                 | Status                                             | Target Date                  | Progress                    |
-| -------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------- | --------------------------- |
-| <!-- [FILL: Goal 1 - e.g., Master Rust programming] -->              | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] -->     | <!-- [FILL: Progress %] --> |
-| <!-- [FILL: Goal 2 - e.g., Contribute to 5 open source projects] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] -->     | <!-- [FILL: Progress %] --> |
-| <!-- [FILL: Goal 3] -->                                              | <!-- [FILL: Status] -->                            | <!-- [FILL: Target Date] --> | <!-- [FILL: Progress %] --> |
-
-### 📚 Learning Goals
-
-| Goal                                                                | Status                                             | Target Date              | Progress                    |
-| ------------------------------------------------------------------- | -------------------------------------------------- | ------------------------ | --------------------------- |
-| <!-- [FILL: Learning Goal 1 - e.g., Complete AWS certification] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
-| <!-- [FILL: Learning Goal 2 - e.g., Learn Kubernetes in depth] -->  | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
-
-### 💪 Personal Goals
-
-| Goal                                                                         | Status                                             | Target Date              | Progress                    |
-| ---------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------ | --------------------------- |
-| <!-- [FILL: Personal Goal 1 - e.g., Read 12 books this year] -->             | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
-| <!-- [FILL: Personal Goal 2 - e.g., Maintain consistent workout routine] --> | <!-- [FILL: In Progress/Completed/Not Started] --> | <!-- [FILL: YYYY-MM] --> | <!-- [FILL: Progress %] --> |
+1. **Thailand's Economy:** Thailand is losing competitiveness in the region, and I want to contribute to solving this.
+2. **Building for the Future:** The world is becoming more complex, and I want to help create people and solutions that can make it better.
+3. **Family Responsibility:** With economic challenges, I want to be capable of supporting and taking care of my family.
 
 ---
 
-## Hobbies and Interests
+## My Missions
 
-- I love exploring new technologies, especially coding productivity tools.
-- I am a regular gym-goer who enjoys staying fit and healthy.
-- I write blog posts about technology and personal development on my [personal blog](/blog).
+> **M1:** Become a great person — Honest, Strong, Disciplined, Wise, Dedicated, and Articulate.
+
+> **M2:** Build or join a real technology company for Thailand — contributing to the nation's tech ecosystem.
+
+> **M3:** Be able to support my family and take full responsibility for them.
+
+---
+
+## Current Narratives
+
+These are the stories I'm actively living:
+
+1. **Becoming Great:** I'm working on personal growth by practicing discipline, honesty, and dedication through hard work and fitness (losing weight).
+
+2. **Learning to Build:** I joined a small deep tech startup to learn how to build and manage companies, develop strong engineering mindsets, and improve technical skills.
+
+3. **Building My Brand:** I'm creating my personal brand through this blog and website. Future plans include a YouTube channel documenting my journey, and expanding to Facebook, Instagram, TikTok, Twitter, and Daily.dev.
+
+---
+
+## Big Goals
+
+| Goal | Target Date |
+|------|-------------|
+| Less than 85 kg with 20% body fat | August 2026 |
+| Start personal brand (Blog + YouTube) | December 2025 |
+| Become a Senior Software Engineer | August 2027 |
+| Ready to have kids and family (financially & mentally) | August 2028 |
+| Learn martial arts (Boxing + Grappling) | August 2029 |
+| Finish a marathon (42.195 km) | August 2030 |
+| Have a flexible body (can do splits) | August 2031 |
+| Excel at Api Plus Tech (salary > 50,000 THB) | December 2026 |
+| Additional income stream (> 3,000 THB/month) | August 2029 |
+
+---
+
+## Current Challenges
+
+- **Discipline:** Struggling to consistently stick to my goals and plans. Working on improving self-discipline.
+- **Future Anxiety:** Worrying about not achieving my goals. Learning to trust the process and be patient.
+- **Financial Constraints:** Limited funds to invest in personal growth. Finding ways to increase income and save more.
+
+---
+
+## Things I've Been Wrong About
+
+- Thinking I was better than other people — I'm just a human like everyone else.
+- Believing that being good at something only requires a little effort — It actually takes a lot of time and dedication.
+
+---
+
+## My Ideas & Beliefs
+
+1. All governments should be digitalized to decrease costs and increase efficiency.
+2. Thai people should support Thai products and companies more.
+3. Thailand needs strong monopolistic companies to compete in the global market.
+4. Thailand needs to focus on developing deep tech and high-tech industries.
+5. Phrae is a great place because it has "nothing" (that's unique) — making it a perfect place to relax.
+6. Learning Chinese and English is essential because they are the languages of the two superpowers.
+7. AI-powered startups are the new trend, especially in Thailand where traditional businesses are still dominant.
+
+---
+
+## My Predictions
+
+| Prediction | Confidence |
+|------------|------------|
+| Bitcoin will become the backbone of the world's new financial system by 2052 | 35% |
+| AI will boost human productivity by 10x in the next 10 years | 90% |
+| Longevity will be a major trend by 2028 | 70% |
+| SET index will reach 2,000 by 2030 | 20% |
+
+---
+
+## Wisdom I Live By
+
+- **Always do the hard thing.**
+- **Discipline gives you freedom.**
+- **Be so good they can't ignore you.**
+- **Relationships are the most important thing in life.**
 
 ---
 
 ## Favorite Things
 
 - **Food:** Steak, fried chicken, and anything my girlfriend likes (she has great taste)
-- **Restaurant:** The 3rd restaurant in Chula dormitory called "bowvy ju", and any restaurant my girlfriend picks (she really has good taste)
-- **Music Genres:** Thai country (e.g., Kon La Fun / Carabao), Cocktail (band)
+- **Restaurant:** The 3rd restaurant in Chula dormitory called "bowvy ju", and any restaurant my girlfriend picks
+- **Music:** Thai country (Kon La Fun, Carabao), Cocktail (band)
 - **Programming Languages:** Go, Rust
-- **Code Editor:** Neovim (I use VSCode for daily work)
+- **Code Editor:** Neovim (VSCode for daily work)
 - **Operating System:** Linux (Arch Linux)
-- **Public Company:** Google
-- **Items:** Bitcoin
+- **Favorite Company:** Google
+- **Favorite Asset:** Bitcoin
+- **Best YouTube Channel:** [The Standard News](https://www.youtube.com/@TheStandardNews)
 
 ---
 
-## Notable Achievements
+## Connect With Me
 
-- Participated in a Work and Travel program during summer 2025 — Delaware, USA.
+Feel free to reach out for professional inquiries, collaboration opportunities, or just to say hello!
 
-- Multiple-time participant in the Chulalongkorn University Dormitory Voluntary Camp (50th, 51st, 52nd):
-  - (50th) Participated in camp activities to help a local school in a rural area — Udon Thani, Thailand.
-  - (51st) Led a team of university students to collaborate with the local community to build a multi-purpose building for a rural school — Surin, Thailand.
-  - (52nd) Organized and led activities for volunteer students to participate in community service — Chumphon, Thailand.
-
-- Bronze medalist in the 17th Thailand Mathematics Olympiad (TMO 17):
-  - Represented Chiang Mai University at the national mathematics competition for high school students and achieved a bronze medal.
-  - Achieved the highest score from the northern region that year.
+| Platform  | Link                                                                    | Description                                |
+| --------- | ----------------------------------------------------------------------- | ------------------------------------------ |
+| Email     | [supakone.kongprapan@gmail.com](mailto:supakone.kongprapan@gmail.com)   | Professional inquiries                     |
+| GitHub    | [preamza02](https://github.com/preamza02)                               | Open source projects and contributions     |
+| LinkedIn  | [Supakone Kongprapan](https://www.linkedin.com/in/supakone-kongprapan/) | Professional networking and career updates |
+| Twitter/X | [@preamza02](https://twitter.com/preamza02)                             | Tech thoughts and daily updates            |
+| YouTube   | [Sukong Something](https://www.youtube.com/@supakonedev)                | Tech tutorials and vlogs                   |
