@@ -1,7 +1,7 @@
 ---
 title: Implementation
 description: Implementation details for Supakone.me
-lastUpdated: 2024-11-26
+lastUpdated: 2024-11-29
 sidebar:
     order: 2
 ---
@@ -59,35 +59,106 @@ import { FileTree } from '@astrojs/starlight/components';
 
 ## ADR (Architecture Decision Record)
 
-### ADR-0001: Choosing Frontend Framework
+### ADR-0002: Choosing Deployment Platform
 
-Status: Accepted
+**Status:** Accepted
 
-Deciders: [Supakone Kongprapan](https://github.com/preamza02)
+**Deciders:** [Supakone Kongprapan](https://github.com/preamza02)
 
-Date: 2025-11-24
+**Date:** 2025-11-29
 
-Technical Story: [issue-001](https://github.com/preamza02/supakone.me/issues/1)
+**Technical Story:** [issue-005](https://github.com/preamza02/supakone.me/issues/5)
 
 #### Context and Problem Statement
-When building Supakone.me, I needed to choose a frontend framework that would allow me to create a fast, maintainable, and scalable personal website.
 
-And also I want a feature-rich template document builder that uses markdown built-in website while allowing me to customize it easily
+I need to deploy **Supakone.me** to provide global access to users globally at **0 cost** (except for domain costs) since this is a personal website.
 
-Decision Drivers
-- Markdown Support
-- Maintainability
-- Static Site Generation
-- Performance
-- Community and Ecosystem
+As of today (2025-11-29), **Supakone.me** is an Astro-based website that generates a static site without calling any backend service. So, I think it is possible to host it on a **static hosting platform**.
 
-Considered Options
-- Option 1: Astro with Starlight
-- Option 2: Hugo
-- Option 3: Docusaurus.io 
+But at the same time, the **roadmap of Supakone.me** seems to include functionality that might require backend services in the future (e.g., **Contact form**, **Notification system** for new blog posts).
 
-Decision Outcome
+So, when choosing a deployment platform, I need to consider both **static hosting** and the possibility of adding **backend services** in the future.
 
-Chosen Option: "Astro with Starlight", while all options support markdown and static site generations, 
-Astro with Starlight offers the best in terms of customization from Community plugin and (as I research) have the best performance
-also with Astro no javascript principle I think this is the best choice for my personal website.
+And since **Supakone.me** is based on a GitHub repository, I want to choose a deployment platform that integrates well with **GitHub** and supports **CI/CD pipelines** easily.
+
+I also have an **n8n service** running on my own server.
+
+**Decision Drivers**
+- **Cost:** Free hosting
+- **Ease of Deployment:** Simple setup process
+- **Support for Static Site Hosting:** Native support for Astro
+- **Support for Future Backend Services:** Scalability
+- **Performance and Reliability:** Global CDN
+- **CI/CD Integration:** Automated workflows
+- **Possible Knowledge Gain:** Learning opportunity
+
+**Considered Options**
+- **Option 1:** GitHub Pages with Third-Party Backend (e.g., Firebase Functions)
+- **Option 2:** AWS S3 + CloudFront with Serverless Backend (e.g., AWS Lambda)
+- **Option 3:** GitHub Pages with Serverless Backend (e.g., GCP Cloud Functions, AWS Lambda)
+- **Option 4:** Vercel (with Serverless Functions)
+- **Option 5:** Cloudflare Pages (with Cloudflare Workers)
+
+#### Decision Outcome
+
+**Chosen Option:** **Option 5: Cloudflare Pages (with Cloudflare Workers)**, utilizing my existing self-hosted n8n for workflow automation (email/notifications).
+
+**The main reason for choosing Cloudflare Pages is:**
+It offers the best balance between performance, cost, and developer experience (DX).
+
+1.  **Unified Architecture:** Cloudflare Pages allows for a "monorepo" feel where backend logic (Workers) and frontend code live together. This eliminates CORS issues and simplifies the deployment pipeline compared to separating them (e.g., GitHub Pages + External Backend).
+2.  **Hard Cost Cap:** Unlike AWS or Vercel, Cloudflare offers a generous free tier with unlimited bandwidth and requests, ensuring a strictly **$0 cost** for a personal site.
+3.  **Future-Proofing:** Since the site is built with Astro, Cloudflare's native adapter support allows me to easily switch from Static Site Generation (SSG) to Server-Side Rendering (SSR) in the future without changing hosting providers.
+4.  **Role of n8n:** I will leverage my existing self-hosted n8n instance for "low-code" backend tasks like sending emails or broadcasting notifications, keeping the core application logic clean.
+5.  **Cloudflare Workers Serverless Performance:** Cloudflare Workers run on the V8 engine at the edge, providing low-latency responses globally, which is ideal for any future backend needs.
+
+**Positive Consequences**
+* **Zero Maintenance:** Native CI/CD integration with GitHub means pushes deploy automatically.
+* **Performance:** Content is served from Cloudflare's edge network, which is faster than standard GitHub Pages.
+* **Seamless Scaling:** Adding a backend API in the future is as simple as adding a `./functions` directory to the project.
+
+**Negative Consequences**
+* **Vendor Lock-in:** Moving away from Cloudflare Workers in the future would require refactoring backend code, as the runtime is specific to Cloudflare (V8 Isolate) rather than standard Node.js containers.
+
+#### Additional Context
+
+**Runner-Up: Option 2 (AWS S3 + CloudFront + Terraform)**
+This option was a strong contender because it aligns with my goal of mastering "Hard" engineering concepts and Infrastructure as Code (IaC). However, it was rejected for *this specific project* (Supakone.me) because the overhead of managing IAM roles and the risk of uncapped billing (DDoS risk) outweighs the benefits for a simple personal blog.
+
+**Note for Future Architecture:**
+The AWS + Terraform stack (Option 2) is explicitly reserved for the **FinSim** project, which will require a full-stack environment. This evaluation will serve as a reference for the future FinSim ADR.
+
+### ADR-0001: Choosing Frontend Framework
+
+**Status:** Accepted
+
+**Deciders:** [Supakone Kongprapan](https://github.com/preamza02)
+
+**Date:** 2025-11-24
+
+**Technical Story:** [issue-001](https://github.com/preamza02/supakone.me/issues/1)
+
+#### Context and Problem Statement
+When building **Supakone.me**, I needed to choose a frontend framework that would allow me to create a **fast, maintainable, and scalable** personal website.
+
+And also, I want a **feature-rich template document builder** that uses **Markdown-built-in websites** while allowing me to customize it easily.
+
+**Decision Drivers**
+- **Markdown Support:** Ease of writing
+- **Maintainability:** Long-term project health
+- **Static Site Generation:** SEO and Speed
+- **Performance:** Load times
+- **Community and Ecosystem:** Plugins and support
+
+**Considered Options**
+- **Option 1:** Astro with Starlight
+- **Option 2:** Hugo
+- **Option 3:** Docusaurus.io 
+
+#### Decision Outcome
+
+**Chosen Option:** **Astro with Starlight**.
+
+While all options support Markdown and static site generation, **Astro with Starlight** offers the best in terms of **customization** from community plugins and (as I researched) has the **best performance**.
+
+Also, with **Astro's zero-JavaScript principle**, I think this is the best choice for my personal website.
