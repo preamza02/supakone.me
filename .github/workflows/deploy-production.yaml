@@ -30,6 +30,7 @@ jobs:
         run: |
           cd docs
           pnpm install
+          pnpm exec playwright install --with-deps
 
       - name: Build Site
         run: |
