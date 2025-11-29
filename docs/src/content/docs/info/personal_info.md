@@ -27,7 +27,7 @@ I'm **Supakone Kongprapan** (nickname: Prame), a Software Engineer from Phrae, T
 ### 📚 Education
 
 - **2017–2021:** SMTE (Science, Math, Technology and Environment) Program at Piriyalai School Phrae — Showed talent in mathematics and had a great teen experience.
-- **2021–2025:** Bachelor of Engineering in Computer Engineering at Chulalongkorn University, Bangkok — Participated in 3 voluntary camps and graduated in 2025.
+- **2021–2025:** Bachelor of Engineering in Computer Engineering at Chulalongkorn University, Bangkok — Participated in 3 volunteer camps and graduated in 2025.
 
 ### 💼 Career
 
@@ -38,7 +38,7 @@ I'm **Supakone Kongprapan** (nickname: Prame), a Software Engineer from Phrae, T
 ### 🏆 Notable Achievements
 
 - **Bronze Medalist** at the 17th Thailand Mathematics Olympiad (TMO 17) — Represented Chiang Mai University and achieved the highest score from the northern region.
-- **3× Volunteer Leader** at Chulalongkorn University Dormitory Voluntary Camp (50th, 51st, 52nd):
+- **3× Volunteer Leader** at Chulalongkorn University Dormitory Volunteer Camp (50th, 51st, 52nd):
   - Led teams to build infrastructure and organize community service in rural areas across Udon Thani, Surin, and Chumphon, Thailand.
 
 ---
@@ -75,17 +75,17 @@ These are the stories I'm actively living:
 
 ## Big Goals
 
-| Goal | Target Date |
-|------|-------------|
-| Less than 85 kg with 20% body fat | August 2026 |
-| Start personal brand (Blog + YouTube) | December 2025 |
-| Become a Senior Software Engineer | August 2027 |
-| Ready to have kids and family (financially & mentally) | August 2028 |
-| Learn martial arts (Boxing + Grappling) | August 2029 |
-| Finish a marathon (42.195 km) | August 2030 |
-| Have a flexible body (can do splits) | August 2031 |
-| Excel at Api Plus Tech (salary > 50,000 THB) | December 2026 |
-| Additional income stream (> 3,000 THB/month) | August 2029 |
+| Goal                                                   | Target Date   |
+| ------------------------------------------------------ | ------------- |
+| Less than 85 kg with 20% body fat                      | August 2026   |
+| Start personal brand (Blog + YouTube)                  | December 2025 |
+| Become a Senior Software Engineer                      | August 2027   |
+| Ready to have kids and family (financially & mentally) | August 2028   |
+| Learn martial arts (Boxing + Grappling)                | August 2029   |
+| Finish a marathon (42.195 km)                          | August 2030   |
+| Have a flexible body (can do splits)                   | August 2031   |
+| Excel at Api Plus Tech (salary > 50,000 THB)           | December 2026 |
+| Additional income stream (> 3,000 THB/month)           | August 2029   |
 
 ---
 
@@ -118,12 +118,12 @@ These are the stories I'm actively living:
 
 ## My Predictions
 
-| Prediction | Confidence |
-|------------|------------|
-| Bitcoin will become the backbone of the world's new financial system by 2052 | 35% |
-| AI will boost human productivity by 10x in the next 10 years | 90% |
-| Longevity will be a major trend by 2028 | 70% |
-| SET index will reach 2,000 by 2030 | 20% |
+| Prediction                                                                   | Confidence |
+| ---------------------------------------------------------------------------- | ---------- |
+| Bitcoin will become the backbone of the world's new financial system by 2052 | 35%        |
+| AI will boost human productivity by 10x in the next 10 years                 | 90%        |
+| Longevity will be a major trend by 2028                                      | 70%        |
+| SET index will reach 2,000 by 2030                                           | 20%        |
 
 ---
 
