@@ -1,0 +1,46 @@
+name: PR Build and Test
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  build-and-test:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node & PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 10.19.0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          cache-dependency-path: docs/pnpm-lock.yaml
+
+      - name: Install Dependencies
+        run: |
+          cd docs
+          pnpm install
+          pnpm exec playwright install --with-deps
+
+      - name: Build Site
+        run: |
+          cd docs
+          pnpm run build
+
+      - name: Run E2E Tests
+        run: |
+          cd docs
+          pnpm run test
