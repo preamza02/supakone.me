@@ -1,7 +1,8 @@
 ---
 title: What is Mermaid Chart?
 date: 2025-11-29
-author: me
+authors: 
+- copilot_assistant
 tags: [documentation, diagram, mermaid, web development]
 description: Learn about Mermaid Chart - a JavaScript-based diagramming and charting tool that renders Markdown-inspired text definitions to create diagrams dynamically.
 lastUpdated: 2025-11-29

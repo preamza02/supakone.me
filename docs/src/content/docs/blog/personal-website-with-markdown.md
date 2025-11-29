@@ -1,7 +1,7 @@
 ---
 title: How to Create Your Blog using only Markdown
 date: 2025-11-04
-author: me
+authors: me
 tags: [blog, markdown, web development]
 # cover:
 #     alt: Blog placeholder image
