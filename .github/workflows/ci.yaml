@@ -1,15 +1,19 @@
-name: Deploy to Cloudflare Pages on Release
+name: Build, Test and Deploy
 
 on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
   release:
     types: [published]
 
 jobs:
-  deploy-production:
+  build-and-test:
+    if: github.event_name == 'pull_request' && github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
+      pull-requests: write
 
     steps:
       - name: Checkout
@@ -42,6 +46,39 @@ jobs:
         run: |
           cd docs
           pnpm run test
+
+  deploy-production:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node & PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 10.19.0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          cache-dependency-path: docs/pnpm-lock.yaml
+
+      - name: Install Dependencies
+        run: |
+          cd docs
+          pnpm install
+
+      - name: Build Site
+        run: |
+          cd docs
+          pnpm run build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
