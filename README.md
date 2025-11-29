@@ -41,6 +41,13 @@
    ```
 4. Open your browser and navigate to `http://localhost:4321`
 
+> [!TIP]
+> Make sure to install Playwright browsers after installing dependencies:
+> ```bash
+> pnpm exec playwright install --with-deps chromium
+> ```
+> And I also have prehook before commit and push to check code style if you want to skip it you can use `--no-verify` flag
+
 ## Documentation
 Visit our [Documentation](https://supakone.me/docs/)
 
