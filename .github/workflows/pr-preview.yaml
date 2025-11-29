@@ -39,6 +39,11 @@ jobs:
         run: |
           cd docs
           pnpm run build
+
+      - name: Run E2E Tests
+        run: |
+          cd docs
+          pnpm run test
                     
         # Uncomment the following lines to enable deployment to Cloudflare Pages In the Future (Because I am using free version, I will not enable this for now)
 
