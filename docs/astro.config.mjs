@@ -5,10 +5,13 @@ import starlightBlog from 'starlight-blog'
 import starlightSidebarTopics from 'starlight-sidebar-topics'
 import { SITE_TITLE, URL } from './src/const/const';
 import rehypeMermaid from 'rehype-mermaid';
+import cloudflare from '@astrojs/cloudflare';
 
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'static',
+  adapter: cloudflare(),
   site: URL,
   integrations: [
     starlight({
