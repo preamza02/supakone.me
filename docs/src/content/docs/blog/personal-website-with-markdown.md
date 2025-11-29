@@ -6,7 +6,7 @@ tags: [blog, markdown, web development]
 # cover:
 #     alt: Blog placeholder image
 # image: ../../../assets/blog-placeholder-about.jpg
-lastUpdated: 2024-11-26
+lastUpdated: 2025-11-26
 draft: true
 ---
 

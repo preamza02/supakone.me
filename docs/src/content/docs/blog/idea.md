@@ -1,10 +1,10 @@
 ---
 title: Idea
-date: 2024-11-29
+date: 2025-11-29
 authors: me
 tags: [blog, idea, personal]
 Description: The idea behind creating a personal website using Markdown and Starlight.
-lastUpdated: 2024-11-29
+lastUpdated: 2025-11-29
 draft: true
 ---
 
