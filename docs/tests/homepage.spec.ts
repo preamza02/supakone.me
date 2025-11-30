@@ -17,4 +17,41 @@ test.describe("Homepage", () => {
     const header = page.locator("header");
     await expect(header).toBeVisible();
   });
+
+  test("should have Open Graph meta tags", async ({ page }) => {
+    await page.goto("/");
+
+    // Check og:title
+    const ogTitle = await page.locator('meta[property="og:title"]');
+    await expect(ogTitle).toHaveCount(1);
+
+    // Check og:image
+    const ogImage = await page.locator('meta[property="og:image"]');
+    await expect(ogImage).toHaveCount(1);
+    const ogImageContent = await ogImage.getAttribute("content");
+    expect(ogImageContent).toContain("/me.png");
+  });
+
+  test("should have JSON-LD structured data", async ({ page }) => {
+    await page.goto("/");
+
+    // Check for Person schema
+    const jsonLdScripts = await page.locator(
+      'script[type="application/ld+json"]',
+    );
+    const count = await jsonLdScripts.count();
+    expect(count).toBeGreaterThanOrEqual(2);
+
+    // Verify content of first JSON-LD (Person)
+    const personSchema = await jsonLdScripts.first().textContent();
+    expect(personSchema).toContain("Person");
+    expect(personSchema).toContain("Supakone Kongprapan");
+
+    // Verify content includes WebSite schema
+    const allSchemas = await jsonLdScripts.allTextContents();
+    const hasWebSiteSchema = allSchemas.some((schema) =>
+      schema.includes("WebSite"),
+    );
+    expect(hasWebSiteSchema).toBe(true);
+  });
 });

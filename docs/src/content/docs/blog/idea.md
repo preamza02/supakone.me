@@ -32,6 +32,8 @@ Ideas for future blog posts:
 - What is Good Blog in general
 - What is Lighthouse Score?
 - How to Create Your Blog using only Markdown
+- Implementing Open Graph Meta Tags for Better Social Sharing
+- Color Contrast and WCAG Accessibility Standards Explained
 
 ### DevOps & Deployment
 
