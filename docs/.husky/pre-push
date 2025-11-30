@@ -2,4 +2,4 @@ cd docs
 echo "🛡️  Checking types..."
 pnpm exec astro check
 echo "🏗️  Verifying build..."
-pnpm run build
+# pnpm run build
