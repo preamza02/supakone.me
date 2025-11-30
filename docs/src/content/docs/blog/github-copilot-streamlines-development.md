@@ -96,4 +96,4 @@ Want to get started? Check out the [official GitHub Copilot documentation](https
 
 ---
 
-*What's your experience with AI coding assistants? Let me know on [GitHub](https://github.com/preamza02) or [LinkedIn](https://www.linkedin.com/in/supakone-kongprapan/)!*
+_What's your experience with AI coding assistants? Let me know on [GitHub](https://github.com/preamza02) or [LinkedIn](https://www.linkedin.com/in/supakone-kongprapan/)!_
