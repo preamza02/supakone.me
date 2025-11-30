@@ -1,4 +1,7 @@
 import { test, expect } from "@playwright/test";
+import resumeData from "../src/data/resume.json" with { type: "json" };
+
+const { basics, experience, projects, education } = resumeData;
 
 test.describe("Resume Page", () => {
   test("should load successfully", async ({ page }) => {
@@ -26,46 +29,50 @@ test.describe("Resume Page", () => {
   test("should display resume owner name", async ({ page }) => {
     await page.goto("/resume");
     const name = page.locator("h1");
-    await expect(name).toContainText("Supakone Kongprapan");
+    await expect(name).toContainText(basics.name);
   });
 
   test("should display job title", async ({ page }) => {
     await page.goto("/resume");
     const title = page.locator("h2");
-    await expect(title).toContainText("Software Engineer");
+    await expect(title).toContainText(basics.label);
   });
 
   test("should display contact information", async ({ page }) => {
     await page.goto("/resume");
     const contactInfo = page.locator(".contact-info");
     await expect(contactInfo).toBeVisible();
-    await expect(contactInfo).toContainText("supakone.kongprapan@gmail.com");
+    await expect(contactInfo).toContainText(basics.email);
   });
 
   test("should display Experience section", async ({ page }) => {
     await page.goto("/resume");
     const experienceSection = page.locator("text=Experience").first();
     await expect(experienceSection).toBeVisible();
-    // Check for company names
-    await expect(page.locator("text=AthenaAI")).toBeVisible();
-    await expect(page.locator("text=Dime! by Kiatnakin Phatra")).toBeVisible();
+    // Check for company names from data
+    for (const exp of experience) {
+      await expect(page.locator(`text=${exp.company}`)).toBeVisible();
+    }
   });
 
   test("should display Projects section", async ({ page }) => {
     await page.goto("/resume");
     const projectsSection = page.locator("text=Projects").first();
     await expect(projectsSection).toBeVisible();
-    await expect(
-      page.locator("text=Depositee Management Service"),
-    ).toBeVisible();
-    await expect(page.locator("text=The Petpal")).toBeVisible();
+    // Check for project names from data
+    for (const project of projects) {
+      await expect(page.locator(`text=${project.name}`)).toBeVisible();
+    }
   });
 
   test("should display Education section", async ({ page }) => {
     await page.goto("/resume");
     const educationSection = page.locator("text=Education").first();
     await expect(educationSection).toBeVisible();
-    await expect(page.locator("text=Chulalongkorn University")).toBeVisible();
+    // Check for institution names from data
+    for (const edu of education) {
+      await expect(page.locator(`text=${edu.institution}`)).toBeVisible();
+    }
   });
 
   test("should display Skills section", async ({ page }) => {

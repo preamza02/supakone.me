@@ -7,6 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = 4321;
 const RESUME_URL = `http://localhost:${PORT}/resume`;
 const OUTPUT_PATH = path.join(__dirname, "..", "public", "resume.pdf");
+const FONT_LOAD_DELAY_MS = 1000;
 
 async function waitForServer(url, maxAttempts = 30, delay = 1000) {
   for (let i = 0; i < maxAttempts; i++) {
@@ -78,8 +79,8 @@ async function generatePDF() {
       timeout: 30000,
     });
 
-    // Wait a bit for fonts to load
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // Wait for fonts to load
+    await new Promise((resolve) => setTimeout(resolve, FONT_LOAD_DELAY_MS));
 
     console.log("📝 Generating PDF...");
     await page.pdf({
