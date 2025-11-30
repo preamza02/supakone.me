@@ -22,11 +22,11 @@ test.describe("Homepage", () => {
     await page.goto("/");
 
     // Check og:title
-    const ogTitle = await page.locator('meta[property="og:title"]');
+    const ogTitle = page.locator('meta[property="og:title"]');
     await expect(ogTitle).toHaveCount(1);
 
     // Check og:image
-    const ogImage = await page.locator('meta[property="og:image"]');
+    const ogImage = page.locator('meta[property="og:image"]');
     await expect(ogImage).toHaveCount(1);
     const ogImageContent = await ogImage.getAttribute("content");
     expect(ogImageContent).toContain("/me.png");
@@ -36,9 +36,7 @@ test.describe("Homepage", () => {
     await page.goto("/");
 
     // Check for Person schema
-    const jsonLdScripts = await page.locator(
-      'script[type="application/ld+json"]',
-    );
+    const jsonLdScripts = page.locator('script[type="application/ld+json"]');
     const count = await jsonLdScripts.count();
     expect(count).toBeGreaterThanOrEqual(2);
 
