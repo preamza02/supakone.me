@@ -24,6 +24,8 @@ Ideas for future blog posts:
 - What is ADR? (Architecture Decision Records)
 - What is GitHub Tags and Releases
 - How GitHub Copilot Streamlines Your Development Process
+- How Astro natively beat lighthouse performance score and accessibility score
+- What is JSON-LD and How to Implement it in Astro
 
 ### Web Development Best Practices
 
