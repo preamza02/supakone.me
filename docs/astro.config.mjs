@@ -60,6 +60,12 @@ export default defineConfig({
               picture: "/copilot_assistant.png",
               url: "https://github.com/preamza02/supakone.me/blob/main/.github/agents/my-agent.agent.md",
             },
+            blog_agent: {
+              name: "Supakone's Blog Agent",
+              title: "Blog Writing Agent",
+              picture: "/copilot_assistant.png",
+              url: "https://github.com/preamza02/supakone.me/blob/main/.github/agents/blog-agent.agent.md",
+            },
           },
         }),
         starlightSidebarTopics(
