@@ -47,6 +47,7 @@ I myself like other fellow software engineer we rarely finish our side project a
 
 ### Finsim - Financial Simulator
 
+- **Status**: Development
 - **Description**: A financial simulator that help user to simulate their personal finance situation over time. User can input their income, expense, asset and liability to see how their net worth change over time with different scenario.
 - **Technologies Used**: Rust, Svelte.js, Sqlite
 - **Source Code**: [GitHub Repository](https://github.com/preamza02/finsim)
@@ -55,6 +56,7 @@ I myself like other fellow software engineer we rarely finish our side project a
 
 ### Supakone.me - Personal Website
 
+- **Status**: Active
 - **Description**: This very website that you are reading right now. I built this website to be all-in-one personal website that can serve multiple purpose such as portfolio, blog, documentation site for my open source projects.
 - **Technologies Used**: Astro (with starlight), MD/MDX, Github Action
 - **Source Code**: [GitHub Repository](https://github.com/preamza02/supakone.me)
