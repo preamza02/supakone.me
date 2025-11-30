@@ -1,0 +1,377 @@
+---
+import resumeData from "../data/resume.json";
+
+const { basics, education, experience, projects, skills } = resumeData;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{basics.name} - Resume</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        font-family: "Inter", Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.4;
+        color: #1a1a1a;
+        background: #f5f5f5;
+      }
+
+      .resume-container {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 20px auto;
+        padding: 12mm 15mm;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Header Section */
+      .header {
+        text-align: center;
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #2a2a2a;
+      }
+
+      .header h1 {
+        font-size: 22pt;
+        font-weight: 700;
+        margin-bottom: 4px;
+        letter-spacing: 0.5px;
+      }
+
+      .header h2 {
+        font-size: 12pt;
+        font-weight: 500;
+        color: #444;
+        margin-bottom: 8px;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        font-size: 9pt;
+        color: #333;
+      }
+
+      .contact-info span {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .contact-info a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+
+      /* Section Styles */
+      .section {
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        font-size: 11pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #ccc;
+        color: #2a2a2a;
+      }
+
+      /* Experience Section */
+      .experience-item {
+        margin-bottom: 10px;
+      }
+
+      .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 2px;
+      }
+
+      .company {
+        font-weight: 600;
+        font-size: 10.5pt;
+      }
+
+      .dates {
+        font-style: italic;
+        font-size: 9pt;
+        color: #555;
+      }
+
+      .position {
+        font-weight: 500;
+        font-size: 10pt;
+        color: #444;
+        margin-bottom: 4px;
+      }
+
+      .highlights {
+        list-style: disc;
+        padding-left: 20px;
+        font-size: 9.5pt;
+      }
+
+      .highlights li {
+        margin-bottom: 2px;
+      }
+
+      /* Projects Section */
+      .project-item {
+        margin-bottom: 8px;
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .project-name {
+        font-weight: 600;
+        font-size: 10.5pt;
+      }
+
+      .project-date {
+        font-style: italic;
+        font-size: 9pt;
+        color: #555;
+      }
+
+      .project-description {
+        font-size: 9.5pt;
+        color: #333;
+        margin-top: 2px;
+      }
+
+      /* Education Section */
+      .education-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 4px;
+      }
+
+      .education-details {
+        flex: 1;
+      }
+
+      .institution {
+        font-weight: 600;
+        font-size: 10.5pt;
+      }
+
+      .degree {
+        font-size: 9.5pt;
+        color: #444;
+      }
+
+      .education-dates {
+        font-style: italic;
+        font-size: 9pt;
+        color: #555;
+      }
+
+      /* Skills Section */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+
+      .skill-category {
+        font-size: 9.5pt;
+      }
+
+      .skill-category strong {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 2px;
+      }
+
+      .skill-list {
+        color: #444;
+      }
+
+      /* Print Styles */
+      @media print {
+        body {
+          margin: 0;
+          background: white;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        .resume-container {
+          width: 100%;
+          margin: 0;
+          padding: 10mm 12mm;
+          box-shadow: none;
+          min-height: auto;
+        }
+
+        @page {
+          margin: 0;
+          size: A4;
+        }
+
+        .no-print {
+          display: none !important;
+        }
+      }
+
+      /* Download Button */
+      .download-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background: #2a2a2a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: inherit;
+      }
+
+      .download-btn:hover {
+        background: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="download-btn no-print" onclick="window.print()">
+      Print / Save as PDF
+    </button>
+
+    <div class="resume-container">
+      <!-- Header -->
+      <header class="header">
+        <h1>{basics.name}</h1>
+        <h2>{basics.label}</h2>
+        <div class="contact-info">
+          <span>📧 <a href={`mailto:${basics.email}`}>{basics.email}</a></span>
+          <span>📞 {basics.phone}</span>
+          <span>📍 {basics.location}</span>
+          <span>🌐 <a href={`https://${basics.website}`}>{basics.website}</a></span>
+          <span>
+            <a href={`https://${basics.github}`}>GitHub</a>
+          </span>
+          <span>
+            <a href={`https://${basics.linkedin}`}>LinkedIn</a>
+          </span>
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <section class="section">
+        <p style="font-size: 10pt; text-align: center; color: #333;">
+          {basics.summary}
+        </p>
+      </section>
+
+      <!-- Experience -->
+      <section class="section">
+        <h3 class="section-title">Experience</h3>
+        {
+          experience.map((exp) => (
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="company">{exp.company}</span>
+                <span class="dates">
+                  {exp.startDate} – {exp.endDate}
+                </span>
+              </div>
+              <div class="position">{exp.position}</div>
+              <ul class="highlights">
+                {exp.highlights.map((highlight) => (
+                  <li>{highlight}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </section>
+
+      <!-- Projects -->
+      <section class="section">
+        <h3 class="section-title">Projects</h3>
+        {
+          projects.map((project) => (
+            <div class="project-item">
+              <div class="project-header">
+                <span class="project-name">{project.name}</span>
+                <span class="project-date">{project.date}</span>
+              </div>
+              <p class="project-description">{project.description}</p>
+            </div>
+          ))
+        }
+      </section>
+
+      <!-- Education -->
+      <section class="section">
+        <h3 class="section-title">Education</h3>
+        {
+          education.map((edu) => (
+            <div class="education-item">
+              <div class="education-details">
+                <span class="institution">{edu.institution}</span>
+                <span class="degree">
+                  {" "}
+                  – {edu.studyType} in {edu.area}
+                </span>
+              </div>
+              <span class="education-dates">
+                {edu.startDate} – {edu.endDate}
+              </span>
+            </div>
+          ))
+        }
+      </section>
+
+      <!-- Skills -->
+      <section class="section">
+        <h3 class="section-title">Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <strong>Languages</strong>
+            <span class="skill-list">{skills.languages.join(", ")}</span>
+          </div>
+          <div class="skill-category">
+            <strong>Technologies</strong>
+            <span class="skill-list">{skills.technologies.join(", ")}</span>
+          </div>
+          <div class="skill-category">
+            <strong>Frameworks</strong>
+            <span class="skill-list">{skills.frameworks.join(", ")}</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
