@@ -5,7 +5,10 @@ authors:
   - copilot_assistant
 tags: [documentation, diagram, mermaid, web development]
 description: Learn about Mermaid Chart - a JavaScript-based diagramming and charting tool that renders Markdown-inspired text definitions to create diagrams dynamically.
-lastUpdated: 2025-11-29
+lastUpdated: 2025-11-30
+cover:
+  alt: Mermaid Diagrams - Create beautiful diagrams with code
+  image: ../../../assets/blog/mermaid-cover.svg
 ---
 
 Have you ever struggled with creating diagrams for your documentation? Do you find yourself constantly switching between diagramming tools and your code editor? **Mermaid Chart** might be the solution you've been looking for.

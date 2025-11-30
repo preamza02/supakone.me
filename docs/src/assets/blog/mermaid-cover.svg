@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a5a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3eb5ae;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffe66d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f7d85a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Grid pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  
+  <!-- Connecting lines (arrows) -->
+  <g stroke="#4ecdc4" stroke-width="3" fill="none" stroke-linecap="round">
+    <!-- Line from Start to Decision -->
+    <path d="M 280 315 L 380 315" marker-end="url(#arrowhead)"/>
+    <!-- Line from Decision to Yes -->
+    <path d="M 530 315 L 620 315"/>
+    <!-- Line from Yes to End -->
+    <path d="M 780 315 L 870 315"/>
+    <!-- Line from Decision down to No -->
+    <path d="M 455 390 L 455 450 L 700 450"/>
+    <!-- Line from No up to End -->
+    <path d="M 860 450 L 920 450 L 920 390"/>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4ecdc4"/>
+    </marker>
+  </defs>
+  
+  <!-- Start Node (rounded rectangle) -->
+  <rect x="130" y="280" width="150" height="70" rx="35" ry="35" fill="url(#nodeGradient)" stroke="#ff8a8a" stroke-width="2"/>
+  <text x="205" y="323" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">Start</text>
+  
+  <!-- Decision Node (diamond) -->
+  <polygon points="455,240 530,315 455,390 380,315" fill="url(#nodeGradient2)" stroke="#6fdbd3" stroke-width="2"/>
+  <text x="455" y="323" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Decision?</text>
+  
+  <!-- Yes Node -->
+  <rect x="620" y="280" width="160" height="70" rx="10" ry="10" fill="url(#nodeGradient3)" stroke="#ffec91" stroke-width="2"/>
+  <text x="700" y="323" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1a1a2e" text-anchor="middle">Yes Path</text>
+  
+  <!-- No Node -->
+  <rect x="700" y="415" width="160" height="70" rx="10" ry="10" fill="#a855f7" stroke="#c084fc" stroke-width="2"/>
+  <text x="780" y="458" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">No Path</text>
+  
+  <!-- End Node (stadium) -->
+  <rect x="870" y="280" width="150" height="70" rx="35" ry="35" fill="#ff6b6b" stroke="#ff8a8a" stroke-width="2"/>
+  <text x="945" y="323" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">End</text>
+  
+  <!-- Title -->
+  <text x="600" y="100" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">Mermaid Diagrams</text>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="24" fill="#4ecdc4" text-anchor="middle">Create beautiful diagrams with code</text>
+  
+  <!-- Code snippet decoration -->
+  <rect x="150" y="520" width="900" height="80" rx="8" ry="8" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="180" y="560" font-family="monospace" font-size="16" fill="#7ee787">```mermaid</text>
+  <text x="180" y="585" font-family="monospace" font-size="16" fill="#c9d1d9">graph LR; A[Start] --> B{Decision}; B -->|Yes| C[End];</text>
+</svg>
