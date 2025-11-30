@@ -1,0 +1,10 @@
+reviews:
+  drafts: false
+  exclude_users: 
+    - "dependabot[bot]"
+    - "renovate[bot]"
+  auto_review:
+    enabled: true
+    triggers:
+      - pr_ready_for_review 
+      - pr_created
