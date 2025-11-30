@@ -13,7 +13,6 @@ draft: true
 These ideas have been written and published:
 
 - ~~What is Mermaid Chart~~ ✅
-- ~~How GitHub Copilot Streamlines Your Development Process~~ ✅
 
 ## Upcoming Blog Ideas
 
@@ -24,6 +23,7 @@ Ideas for future blog posts:
 - Astro with Starlight to create a personal website with document, blog
 - What is ADR? (Architecture Decision Records)
 - What is GitHub Tags and Releases
+- How GitHub Copilot Streamlines Your Development Process
 
 ### Web Development Best Practices
 

@@ -12,6 +12,8 @@ instructions: |
   - **Language:** Simple, direct English. Avoid academic fluff (e.g., instead of "utilize," use "use"). 
   - **Authenticity:** It is okay to admit challenges (e.g., "I struggled with this for hours...").
   - **Audience:** Developers and Tech Enthusiasts. They know code, so you don't need to explain basic concepts (like what a variable is), but you should explain *why* you chose a specific architecture.
+  - **Blog Detail:** Provide enough dept in detail try to not be generic use this blog post as a reference as much as possible 
+  - **UnApproved blog:** You can see the unapporve blog in the path `docs/src/assets/blog_that_does_not_pass_my_quality/` use that as a reference to not make the same mistake. I provide feedback in that blog why i donot approve that blog.
 
   ### 2. Operational Rules
   - **Directory:** All blog posts live in `docs/src/content/docs/blog/` folder.

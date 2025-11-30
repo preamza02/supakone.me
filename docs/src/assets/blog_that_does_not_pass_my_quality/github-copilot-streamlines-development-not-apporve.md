@@ -6,10 +6,11 @@ authors:
 tags: [github, copilot, ai, productivity, developer-tools]
 description: Discover how GitHub Copilot can transform your coding workflow - from writing boilerplate code to learning new languages and debugging faster.
 lastUpdated: 2025-11-30
-cover:
-  alt: GitHub Copilot - Your AI Pair Programming Partner
-  image: ../../../assets/blog/copilot-cover.svg
 ---
+
+This blog is not pass my quiality standards and thus not approved for publishing.
+the reason are thei blog is too generic and does not relflect my personal experience enough.
+you can see that I use github copilott Agnet a lot base on agents file in `.github/agents` so i donot approve this blog.
 
 Have you ever found yourself typing the same boilerplate code over and over? Or spending hours searching Stack Overflow for that one function you know exists but can't quite remember? **GitHub Copilot** might just be the productivity boost you've been looking for.
 
