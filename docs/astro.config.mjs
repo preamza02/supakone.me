@@ -15,6 +15,62 @@ export default defineConfig({
   integrations: [
     starlight({
       title: SITE_TITLE,
+      head: [
+        // Open Graph image for social media sharing
+        {
+          tag: "meta",
+          attrs: { property: "og:image", content: `${URL}/me.png` },
+        },
+        {
+          tag: "meta",
+          attrs: { property: "og:image:width", content: "400" },
+        },
+        {
+          tag: "meta",
+          attrs: { property: "og:image:height", content: "400" },
+        },
+        {
+          tag: "meta",
+          attrs: { property: "og:image:alt", content: "Supakone Kongprapan" },
+        },
+        // Twitter Card image
+        {
+          tag: "meta",
+          attrs: { name: "twitter:image", content: `${URL}/me.png` },
+        },
+        // JSON-LD structured data for Person (Website owner)
+        {
+          tag: "script",
+          attrs: { type: "application/ld+json" },
+          content: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Supakone Kongprapan",
+            url: URL,
+            jobTitle: "Software Engineer",
+            sameAs: [
+              "https://github.com/preamza02",
+              "https://www.linkedin.com/in/supakone-kongprapan/",
+            ],
+            image: `${URL}/me.png`,
+          }),
+        },
+        // JSON-LD structured data for WebSite
+        {
+          tag: "script",
+          attrs: { type: "application/ld+json" },
+          content: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: SITE_TITLE,
+            url: URL,
+            author: {
+              "@type": "Person",
+              name: "Supakone Kongprapan",
+            },
+          }),
+        },
+      ],
       social: [
         {
           icon: "github",
