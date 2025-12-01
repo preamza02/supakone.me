@@ -15,6 +15,10 @@ export default defineConfig({
   integrations: [
     starlight({
       title: SITE_TITLE,
+      favicon: "/me.png",
+      lastUpdated: true,
+      description:
+        "Supakone Kongprapan's personal website and blog about software engineering, technology, and programming.",
       head: [
         // Open Graph image for social media sharing
         {
