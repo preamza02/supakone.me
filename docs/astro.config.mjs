@@ -74,6 +74,15 @@ export default defineConfig({
             },
           }),
         },
+        // Umami Analytics tracking script
+        {
+          tag: "script",
+          attrs: {
+            defer: true,
+            src: "https://cloud.umami.is/script.js",
+            "data-website-id": "acd0c0ad-3b39-46f7-bcb6-29976993aaac",
+          },
+        },
       ],
       social: [
         {
