@@ -52,4 +52,22 @@ test.describe("Homepage", () => {
     );
     expect(hasWebSiteSchema).toBe(true);
   });
+
+  test("should have Umami analytics tracking script", async ({ page }) => {
+    await page.goto("/");
+
+    // Check for Umami script
+    const umamiScript = page.locator(
+      'script[src="https://cloud.umami.is/script.js"]',
+    );
+    await expect(umamiScript).toHaveCount(1);
+
+    // Verify it has the correct data-website-id attribute
+    const websiteId = await umamiScript.getAttribute("data-website-id");
+    expect(websiteId).toBe("acd0c0ad-3b39-46f7-bcb6-29976993aaac");
+
+    // Verify it has defer attribute
+    const hasDefer = await umamiScript.getAttribute("defer");
+    expect(hasDefer).not.toBeNull();
+  });
 });
