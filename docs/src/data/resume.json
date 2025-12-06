@@ -1,0 +1,70 @@
+{
+  "basics": {
+    "name": "Supakone Kongprapan",
+    "label": "Software Engineer",
+    "email": "supakone.kongprapan@gmail.com",
+    "phone": "+66622645246",
+    "location": "Bangkok, Thailand",
+    "website": "supakone.me",
+    "github": "github.com/preamza02",
+    "linkedin": "linkedin.com/in/supakone",
+    "summary": "Computer Engineering student with a love for Software Development, Cloud Computing, and Operating Systems. (I use Archlinux btw)."
+  },
+  "education": [
+    {
+      "institution": "Chulalongkorn University",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2021",
+      "endDate": "2025"
+    }
+  ],
+  "experience": [
+    {
+      "company": "AthenaAI",
+      "position": "Software Developer (Part-time)",
+      "startDate": "Feb 2024",
+      "endDate": "March 2025",
+      "highlights": [
+        "Designed and implemented entire Report Generator Application using Vanilla JS and FastAPI.",
+        "Developed core web application using Vue.js, Jinja2, and FastAPI.",
+        "Maintained production quality using Docker, Linux, and Git."
+      ]
+    },
+    {
+      "company": "Dime! by Kiatnakin Phatra",
+      "position": "Software Engineer Intern",
+      "startDate": "May 2024",
+      "endDate": "Jun 2024",
+      "highlights": [
+        "Developed Backend Stock-related Service with microservice architecture (Golang, RabbitMQ, Redis).",
+        "Implemented cron jobs using Apache Airflow.",
+        "Maintained project quality with intensive Unit and E2E testing."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Depositee Management Service",
+      "date": "Aug 2024 - Nov 2024",
+      "description": "Microservice Architecture class project. Designed scalable backend systems."
+    },
+    {
+      "name": "The Petpal",
+      "date": "Jan 2024 - Apr 2024",
+      "description": "Web app matching pet lovers with service providers using Golang and Next.js."
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "Go", "TypeScript/JavaScript", "SQL"],
+    "technologies": [
+      "Linux (Arch)",
+      "Docker",
+      "AWS",
+      "Kubernetes",
+      "RabbitMQ",
+      "Redis"
+    ],
+    "frameworks": ["FastAPI", "Gin", "Next.js", "React"]
+  }
+}
