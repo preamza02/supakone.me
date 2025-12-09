@@ -29,7 +29,7 @@ I can barely remember what I had for breakfast, let alone why I chose a specific
 
 ### 2. **Onboarding New Team Members**
 
-When someone joins your team, they can read through ADRs and understand not just *what* the architecture looks like, but *why* it evolved that way. It's like having a time machine for context.
+When someone joins your team, they can read through ADRs and understand not just _what_ the architecture looks like, but _why_ it evolved that way. It's like having a time machine for context.
 
 ### 3. **Avoiding Repeated Debates**
 
@@ -47,21 +47,26 @@ Here's the structure I use (and most people follow):
 # ADR-001: Use PostgreSQL for Primary Database
 
 ## Status
+
 Accepted
 
 ## Context
+
 We need a database for our e-commerce application. Requirements:
+
 - ACID compliance for financial transactions
 - Complex querying capabilities for product search
 - Team has strong SQL experience
 - Need to handle 10k+ transactions/day initially
 
 ## Decision
+
 We will use PostgreSQL as our primary database.
 
 ## Consequences
 
 ### Positive
+
 - Robust ACID guarantees for payment processing
 - Powerful JSON support (JSONB) for flexible product attributes
 - Excellent ecosystem and tooling
@@ -69,11 +74,13 @@ We will use PostgreSQL as our primary database.
 - Free and open source
 
 ### Negative
+
 - More complex horizontal scaling compared to NoSQL
 - Requires careful schema design upfront
 - Need to manage migrations carefully
 
 ### Neutral
+
 - Will need connection pooling (PgBouncer) at scale
 - Monitoring setup required for performance tracking
 ```
@@ -83,28 +90,35 @@ That's it. Clean, simple, and **actually useful**.
 ## The Key Sections Explained
 
 ### Status
+
 Usually one of: **Proposed**, **Accepted**, **Deprecated**, **Superseded**
 
 When you supersede an ADR, link to the new one. For example:
+
 ```markdown
 ## Status
+
 Superseded by [ADR-015: Migrate to Aurora PostgreSQL](./adr-015.md)
 ```
 
 ### Context
+
 This is the **why** section. What problem are you solving? What constraints exist? What alternatives did you consider?
 
 Be honest here. Include the messy details:
+
 - Technical constraints ("Our current hosting only supports X")
 - Business constraints ("We need to launch in 2 months")
 - Team constraints ("Nobody knows Rust")
 
 ### Decision
+
 Short and declarative. "We will..." or "We have decided to..."
 
 No wishy-washy language. If you're writing an ADR, a decision has been made.
 
 ### Consequences
+
 This is where you show you've actually thought things through. List the **positive**, **negative**, and **neutral** outcomes.
 
 The negative consequences are especially important. They show you made an informed choice, not a naive one.
@@ -117,10 +131,13 @@ Let me show you one from my own project (this blog, actually):
 # ADR-003: Use rehype-mermaid for Diagram Rendering
 
 ## Status
+
 Accepted
 
 ## Context
+
 I want to include diagrams in blog posts without:
+
 - Manually creating PNG/SVG files
 - Maintaining external diagram files
 - Requiring client-side JavaScript for rendering
@@ -130,11 +147,13 @@ I write in Markdown/MDX and want diagrams to be version-controlled
 as code.
 
 ## Decision
+
 Use rehype-mermaid to render Mermaid diagrams at build time.
 
 ## Consequences
 
 ### Positive
+
 - Diagrams are just text in Markdown—easy to version control
 - No client-side JavaScript needed (renders to SVG at build)
 - Faster page loads—diagrams are pre-rendered
@@ -142,12 +161,14 @@ Use rehype-mermaid to render Mermaid diagrams at build time.
 - Can write diagrams without leaving code editor
 
 ### Negative
+
 - Requires Playwright installation during build (adds ~1-2s)
 - Build fails if Playwright browsers aren't installed
 - Limited to Mermaid syntax (can't use other diagram tools easily)
 - Must rebuild site to see diagram changes
 
 ### Neutral
+
 - Need to run `pnpm exec playwright install --with-deps chromium`
   in CI/CD pipeline
 - Mermaid version is locked to rehype-mermaid's dependencies
@@ -189,6 +210,7 @@ project/
 ```
 
 Some teams use:
+
 - `/adr` in the root
 - `/docs/decisions`
 - A wiki (though I prefer Git-tracked files)
@@ -200,6 +222,7 @@ The key is: **Keep them close to the code.**
 You don't need fancy tools, but these help:
 
 ### adr-tools
+
 ```bash
 # Install
 npm install -g adr-log
@@ -212,60 +235,76 @@ adr list
 ```
 
 ### VS Code Extension
+
 Search for "ADR Tools" in VS Code extensions. Auto-numbering and templates included.
 
 ### Templates
+
 Create a template in your repo:
 
 ```markdown
 # ADR-XXX: [Title]
 
 ## Status
+
 [Proposed | Accepted | Deprecated | Superseded]
 
 ## Context
+
 [What is the issue we're seeing? What constraints exist?]
 
 ## Decision
+
 [What are we doing?]
 
 ## Consequences
+
 ### Positive
-- 
+
+-
 
 ### Negative
-- 
+
+-
 
 ### Neutral
-- 
+
+-
 ```
 
 ## Common Mistakes (That I've Made)
 
 ### 1. **Writing a Novel**
+
 Keep it short. If you're hitting 1000+ words, you're probably writing multiple ADRs.
 
 ### 2. **Being Too Vague**
+
 Bad: "We chose the best database."
 Good: "We chose PostgreSQL because X, Y, Z."
 
 ### 3. **Skipping the Negatives**
+
 Every decision has tradeoffs. If you don't list any negatives, you haven't thought it through.
 
 ### 4. **Never Updating**
+
 ADRs aren't write-once. If you discover new consequences, update the ADR.
 
 ### 5. **ADR Theater**
+
 Don't write ADRs just to check a box. Write them when they add value.
 
 ## When NOT to Use ADRs
 
 You don't need an ADR for:
+
 - Implementation details (variable names, file organization).
 - Temporary decisions ("Let's prototype with library X").
 - Obvious choices ("Use Git for version control").
 
 Save ADRs for decisions that:
+
 - Affect the system's structure
 - Are hard to reverse
 - Influence future development
@@ -292,6 +331,7 @@ And hey, when someone asks "Why did we build it this way?" you can just drop a l
 ---
 
 **Want to learn more?**
+
 - [Michael Nygard's original post](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
 - [adr.github.io](https://adr.github.io/) - Collection of ADR examples
 - [ADR Tools](https://github.com/npryce/adr-tools) - Command-line tools for managing ADRs
