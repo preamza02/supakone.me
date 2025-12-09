@@ -13,6 +13,7 @@ draft: true
 These ideas have been written and published:
 
 - ~~What is Mermaid Chart~~ ✅
+- ~~What is ADR? (Architecture Decision Records)~~ ✅
 
 ## Upcoming Blog Ideas
 
@@ -21,7 +22,6 @@ Ideas for future blog posts:
 ### Developer Experience & Tools
 
 - Astro with Starlight to create a personal website with document, blog
-- What is ADR? (Architecture Decision Records)
 - What is GitHub Tags and Releases
 - How GitHub Copilot Streamlines Your Development Process
 - How Astro natively beat lighthouse performance score and accessibility score
