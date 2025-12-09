@@ -148,7 +148,7 @@ Use rehype-mermaid to render Mermaid diagrams at build time.
 - Must rebuild site to see diagram changes
 
 ### Neutral
-- Need to run 'pnpm exec playwright install --with-deps chromium'
+- Need to run `pnpm exec playwright install --with-deps chromium`
   in CI/CD pipeline
 - Mermaid version is locked to rehype-mermaid's dependencies
 ```
@@ -261,9 +261,9 @@ Don't write ADRs just to check a box. Write them when they add value.
 ## When NOT to Use ADRs
 
 You don't need an ADR for:
-- Implementation details (variable names, file organization)
-- Temporary decisions ("Let's prototype with library X")
-- Obvious choices ("Use Git for version control")
+- Implementation details (variable names, file organization).
+- Temporary decisions ("Let's prototype with library X").
+- Obvious choices ("Use Git for version control").
 
 Save ADRs for decisions that:
 - Affect the system's structure
