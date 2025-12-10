@@ -1,0 +1,70 @@
+---
+/**
+ * Custom MarkdownContent override that adds ShareButtons and RelatedPosts
+ * components to blog posts while preserving the starlight-blog functionality.
+ */
+import StarlightBlogMarkdownContent from "starlight-blog/overrides/MarkdownContent.astro";
+import ShareButtons from "./ShareButtons.astro";
+import RelatedPosts from "./RelatedPosts.astro";
+import { getCollection } from "astro:content";
+import type { BlogPost } from "../utils/blog";
+
+// Get the current page info from Starlight
+const { id, entry } = Astro.locals.starlightRoute;
+
+// Check if this is a blog post page (not the blog index or tag pages)
+const isBlogPost = id.startsWith("blog/") && !id.endsWith("blog/") && entry?.data;
+
+// Prepare data for blog post pages
+let currentPost: BlogPost | null = null;
+let allPosts: BlogPost[] = [];
+let pageUrl = "";
+let pageTitle = "";
+
+if (isBlogPost && entry) {
+  pageTitle = entry.data.title || "";
+  pageUrl = `${Astro.site}${id}/`;
+  
+  // Get all blog posts for related posts calculation
+  const allDocs = await getCollection("docs");
+  
+  // Filter for blog posts only
+  const blogPosts = allDocs.filter((doc) => 
+    doc.id.startsWith("blog/") && 
+    !doc.id.endsWith("blog/") && 
+    doc.id !== "blog"
+  );
+  
+  // Map to BlogPost interface
+  allPosts = blogPosts.map((post) => ({
+    id: post.id,
+    slug: post.id.replace(/^blog\//, ""),
+    data: {
+      title: post.data.title || "",
+      tags: post.data.tags || [],
+      date: post.data.date,
+      draft: post.data.draft,
+    },
+  }));
+  
+  // Find current post
+  currentPost = allPosts.find((post) => post.id === id) || null;
+}
+---
+
+<StarlightBlogMarkdownContent>
+  <slot />
+</StarlightBlogMarkdownContent>
+
+{isBlogPost && currentPost && (
+  <div class="blog-enhancements">
+    <ShareButtons title={pageTitle} url={pageUrl} />
+    <RelatedPosts currentPost={currentPost} allPosts={allPosts} />
+  </div>
+)}
+
+<style>
+  .blog-enhancements {
+    margin-top: 2rem;
+  }
+</style>

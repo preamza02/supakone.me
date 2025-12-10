@@ -1,0 +1,127 @@
+---
+/**
+ * RelatedPosts component - Displays a grid of related blog posts
+ * @prop {BlogPost} currentPost - The current post to find related posts for
+ * @prop {BlogPost[]} allPosts - Array of all blog posts
+ */
+import { getRelatedPosts, type BlogPost } from "../utils/blog";
+
+interface Props {
+  currentPost: BlogPost;
+  allPosts: BlogPost[];
+}
+
+const { currentPost, allPosts } = Astro.props;
+const relatedPosts = getRelatedPosts(currentPost, allPosts, 3);
+---
+
+{
+  relatedPosts.length > 0 && (
+    <section class="related-posts" data-testid="related-posts">
+      <h2 class="related-posts-heading">Related Posts</h2>
+      <div class="related-posts-grid">
+        {relatedPosts.map((post) => (
+          <a
+            href={`/blog/${post.slug}/`}
+            class="related-post-card"
+            data-testid="related-post-card"
+          >
+            <h3 class="related-post-title">{post.data.title}</h3>
+            {post.data.tags && post.data.tags.length > 0 && (
+              <div class="related-post-tags">
+                {post.data.tags.slice(0, 3).map((tag) => (
+                  <span class="related-post-tag">{tag}</span>
+                ))}
+              </div>
+            )}
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .related-posts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--sl-color-gray-5, #e5e5e5);
+  }
+
+  :global([data-theme="dark"]) .related-posts,
+  :global(.dark) .related-posts {
+    border-top-color: var(--sl-color-gray-4, #404040);
+  }
+
+  .related-posts-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--sl-color-text-accent, inherit);
+  }
+
+  .related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .related-post-card {
+    display: block;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    background-color: var(--sl-color-gray-6, #f5f5f5);
+    text-decoration: none;
+    color: inherit;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  :global([data-theme="dark"]) .related-post-card,
+  :global(.dark) .related-post-card {
+    background-color: var(--sl-color-gray-5, #2a2a2a);
+  }
+
+  .related-post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  :global([data-theme="dark"]) .related-post-card:hover,
+  :global(.dark) .related-post-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .related-post-card:focus-visible {
+    outline: 2px solid var(--sl-color-accent, #0066cc);
+    outline-offset: 2px;
+  }
+
+  .related-post-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: var(--sl-color-text, inherit);
+    line-height: 1.4;
+  }
+
+  .related-post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .related-post-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--sl-color-gray-5, #e0e0e0);
+    color: var(--sl-color-text, inherit);
+  }
+
+  :global([data-theme="dark"]) .related-post-tag,
+  :global(.dark) .related-post-tag {
+    background-color: var(--sl-color-gray-4, #404040);
+  }
+</style>

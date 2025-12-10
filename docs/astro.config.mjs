@@ -107,6 +107,9 @@ export default defineConfig({
         alt: SITE_TITLE + " Logo",
       },
       customCss: ["./src/styles/global.css"],
+      components: {
+        MarkdownContent: "./src/components/MarkdownContent.astro",
+      },
       plugins: [
         starlightBlog({
           title: {
